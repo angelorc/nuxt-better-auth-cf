@@ -8,9 +8,5 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@nuxt/eslint', '@nuxthub/core'],
-  
-  hub: {
-    workers: true,
-  }
+  modules: ['@nuxt/eslint'],
 })
