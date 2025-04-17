@@ -1,4 +1,0 @@
-name = "nuxt-better-auth-cf"
-compatibility_date = "2025-01-28"
-main = "./.output/server/index.mjs"
-assets = { directory = "./.output/public/", binding = "ASSETS" }
