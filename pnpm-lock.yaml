@@ -11,9 +11,6 @@ importers:
       '@nuxt/eslint':
         specifier: 1.3.0
         version: 1.3.0(@vue/compiler-sfc@3.5.13)(eslint@9.24.0(jiti@2.4.2))(magicast@0.3.5)(typescript@5.8.3)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
-      '@nuxthub/core':
-        specifier: 0.8.24
-        version: 0.8.24(@netlify/blobs@8.2.0)(db0@0.3.1)(ioredis@5.6.1)(magicast@0.3.5)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
       eslint:
         specifier: ^9.0.0
         version: 9.24.0(jiti@2.4.2)
@@ -902,9 +899,6 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
-  '@nuxthub/core@0.8.24':
-    resolution: {integrity: sha512-UkpLNLhsUIGOAt7MH7QR7WIrJS7wa/VHV/VVftd3pUPFN24+ZpKV0fm5KYLfqiDVauECRNr9Kh/MY+bC26rtZw==}
-
   '@oxc-parser/binding-darwin-arm64@0.56.5':
     resolution: {integrity: sha512-rj4WZqQVJQgLnGnDu2ciIOC5SqcBPc4x11RN0NwuedSGzny5mtBdNVLwt0+8iB15lIjrOKg5pjYJ8GQVPca5HA==}
     engines: {node: '>=14.0.0'}
@@ -1458,9 +1452,6 @@ packages:
     resolution: {integrity: sha512-wAvXp4k7jhioi4SebXW/yfzzYwsUCr9kIX4gCsUFKpCTUf8Mi7vScJXI3S+kupSUf0LbVHudR8qBbe2wFMSNUw==}
     cpu: [x64]
     os: [win32]
-
-  '@uploadthing/mime-types@0.3.4':
-    resolution: {integrity: sha512-EB0o0a4y++UJFMLqS8LDVhSQgXUllG6t5fwl5cbmOM0Uay8YY5Nc/JjFwzJ8wccdIKz4oYwQW7EOSfUyaMPbfw==}
 
   '@vercel/nft@0.27.7':
     resolution: {integrity: sha512-FG6H5YkP4bdw9Ll1qhmbxuE8KwW2E/g8fJpM183fWQLeVDGqzeywMIeJ9h2txdWZ03psgWMn6QymTxaDLmdwUg==}
@@ -3213,9 +3204,6 @@ packages:
     resolution: {integrity: sha512-+Uh1YkU5EjbvqqmolVy/N8RlejDg2zvSqnpbpdaTAkgpIXgeIhCkUep0SAWa2UCEIf1Mlz1XHWRmQJaSgIZbGw==}
     engines: {node: ^14.16.0 || >=16.0.0}
 
-  nitro-cloudflare-dev@0.2.2:
-    resolution: {integrity: sha512-aZfNTVdgXPQeAmXW0Tw8hm3usAHr4qVG4Bg3WhHBGeZYuXr9OyT04Ztb+STkMzhyaXvfMHViAaPUPg06iAYqag==}
-
   nitropack@2.11.9:
     resolution: {integrity: sha512-SL5L3EDMJFXbEX0zZbNl67jRW+5312UGAkw6t0PGjjP1cuLULvR9trhx2rz/RYltRCfzrJG1hp6j3vxxhDLohg==}
     engines: {node: ^16.11.0 || >=17.0.0}
@@ -4900,7 +4888,8 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20250416.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20250417.0': {}
+  '@cloudflare/workers-types@4.20250417.0':
+    optional: true
 
   '@colors/colors@1.6.0': {}
 
@@ -5718,49 +5707,6 @@ snapshots:
       - vue-tsc
       - yaml
 
-  '@nuxthub/core@0.8.24(@netlify/blobs@8.2.0)(db0@0.3.1)(ioredis@5.6.1)(magicast@0.3.5)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))':
-    dependencies:
-      '@cloudflare/workers-types': 4.20250417.0
-      '@nuxt/devtools-kit': 2.4.0(magicast@0.3.5)(vite@6.3.1(@types/node@22.14.1)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))
-      '@nuxt/kit': 3.16.2(magicast@0.3.5)
-      '@uploadthing/mime-types': 0.3.4
-      citty: 0.1.6
-      confbox: 0.2.2
-      defu: 6.1.4
-      destr: 2.0.5
-      h3: 1.15.1
-      mime: 4.0.7
-      nitro-cloudflare-dev: 0.2.2
-      ofetch: 1.4.1
-      pathe: 2.0.3
-      pkg-types: 2.1.0
-      std-env: 3.9.0
-      ufo: 1.6.1
-      uncrypto: 0.1.3
-      unstorage: 1.15.0(@netlify/blobs@8.2.0)(db0@0.3.1)(ioredis@5.6.1)
-      zod: 3.24.3
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@deno/kv'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@upstash/redis'
-      - '@vercel/blob'
-      - '@vercel/kv'
-      - aws4fetch
-      - db0
-      - idb-keyval
-      - ioredis
-      - magicast
-      - uploadthing
-      - vite
-
   '@oxc-parser/binding-darwin-arm64@0.56.5':
     optional: true
 
@@ -6212,8 +6158,6 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.5.0':
     optional: true
-
-  '@uploadthing/mime-types@0.3.4': {}
 
   '@vercel/nft@0.27.7(rollup@4.40.0)':
     dependencies:
@@ -8099,12 +8043,6 @@ snapshots:
       node-fetch: 3.3.2
       p-wait-for: 5.0.2
       qs: 6.14.0
-
-  nitro-cloudflare-dev@0.2.2:
-    dependencies:
-      consola: 3.4.2
-      mlly: 1.7.4
-      pkg-types: 2.1.0
 
   nitropack@2.11.9(@netlify/blobs@8.2.0):
     dependencies:
