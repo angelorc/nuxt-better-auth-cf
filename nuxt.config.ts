@@ -9,4 +9,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: ['@nuxt/eslint'],
+
+  nitro: {
+    experimental: {
+      asyncContext: true,
+    },
+    rollupConfig: {
+      external: ['pg-native', 'cloudflare:sockets'],
+    },
+  },
 })
