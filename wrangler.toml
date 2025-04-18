@@ -3,3 +3,8 @@ compatibility_flags = [ "nodejs_compat" ]
 compatibility_date = "2025-01-28"
 main = "./.output/server/index.mjs"
 assets = { directory = "./.output/public/", binding = "ASSETS" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "prod-d1-nuxt-better-auth-cf"
+database_id = "81680c88-1d64-45bf-aa4b-7b99b4d68df8"

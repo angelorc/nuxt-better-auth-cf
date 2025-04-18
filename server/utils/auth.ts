@@ -1,3 +1,4 @@
+import { D1Dialect } from "@atinux/kysely-d1";
 import { betterAuth } from "better-auth";
 import pg from "pg";
 
@@ -5,9 +6,12 @@ const { Pool } = pg
 
 export const auth = betterAuth({
   baseURL: getBaseURL(),
-  database: new Pool({
-    connectionString: process.env.DATABASE_URL,
-  }),
+  database: {
+    dialect: new D1Dialect({
+      database: db(),
+    }),
+    type: "sqlite",
+  },
   emailAndPassword: {
     enabled: false,
   },
